@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tns.espapp.fragment_new.AccountStatementFragment_new">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--  header.......................-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_personal_ind_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Account Statememt"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--   end header-->
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Date Form">
+
+            </TextView>
+
+            <EditText
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:focusable="false"
+                android:id="@+id/edt_accountinfo_dateform"
+                android:background="@drawable/spinner_bg"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Date To">
+
+            </TextView>
+
+            <EditText
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:focusable="false"
+                android:id="@+id/edt_accountinfo_dateto"
+                android:background="@drawable/spinner_bg"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_accountinfoSearch"
+            android:background="@drawable/btn"
+            android:text="Search"
+            android:layout_margin="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+
+        <TextView
+            android:layout_margin="2dp"
+            android:visibility="gone"
+            android:id="@+id/tv_accountstatement_norecord"
+            android:background="@drawable/edt_border"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="No Record Found"
+            android:textColor="@color/red" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_accountinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

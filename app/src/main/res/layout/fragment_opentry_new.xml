@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0E6F1"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--  header.......................-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_personal_ind_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="OP Entry"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--   end header-->
+
+  <!--  ..........GPS Status.............-->
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:text="Project No:"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_project_no"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="@dimen/largeTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:text="Mode"
+                android:textSize="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spi_opimode"
+                android:background="@drawable/spinner_bg"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="9"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:text="Start KM"
+                    android:textSize="@dimen/smallTextSize"
+                    android:id="@+id/startKmTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:text="Start"
+                    android:layout_gravity="right"
+                    android:id="@+id/btn_start_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:layout_weight="8"
+                android:id="@+id/edt_startkm_text"
+                android:padding="5dp"
+                android:textSize="@dimen/smallTextSize"
+                android:background="@drawable/edt_border"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:id="@+id/edt_startkm_image"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:focusable="false"
+                android:padding="1dp"
+                android:textSize="@dimen/smallTextSize"
+                android:background="@drawable/edt_border"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:text="End KM"
+                    android:textSize="@dimen/smallTextSize"
+                    android:id="@+id/endKmTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:layout_weight="1"
+                    android:text="Stop"
+                    android:layout_gravity="right"
+                    android:id="@+id/btn_stop_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:layout_weight="8"
+                android:id="@+id/edt_endkmtext"
+                android:padding="5dp"
+                android:textSize="@dimen/smallTextSize"
+                android:background="@drawable/edt_border"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:id="@+id/edt_endkm_image"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:focusable="false"
+                android:padding="1dp"
+                android:textSize="@dimen/smallTextSize"
+                android:background="@drawable/edt_border"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_milestone"
+                android:textSize="@dimen/smallTextSize"
+                android:text="Add Milestone"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_view_milestone"
+                android:textSize="@dimen/smallTextSize"
+                android:text="View Milestone"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+<!--..............Start Header MileStone.........................-->
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:visibility="gone"
+            android:id="@+id/listview_milestone_header"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/white"
+                android:text="SNo."
+                android:id="@+id/srno_milestone"
+                android:layout_weight=".4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="ProjectNo"
+                android:visibility="gone"
+                android:id="@+id/projectno_milestone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Date"
+                android:id="@+id/date_milestone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Lat"
+                android:visibility="gone"
+                android:id="@+id/lat_milestone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Long"
+                android:visibility="gone"
+                android:id="@+id/log_milestone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Location"
+                android:id="@+id/location_milestone"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Status"
+                android:id="@+id/status_milestone"
+                android:layout_weight=".6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+<!--..............End Header MileStone.........................-->
+            <ListView
+                android:layout_margin="2dp"
+                android:visibility="visible"
+                android:id="@+id/listview_milestone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/table_mainssss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+
+            <!--  ..........GPS Status.............-->
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:textSize="@dimen/smallTextSize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Date"
+                android:textColor="@color/black" />
+
+
+            <EditText
+
+                android:textSize="@dimen/smallTextSize"
+                android:focusable="false"
+                android:layout_gravity="center"
+                android:id="@+id/tv_opentry_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                />
+
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="@dimen/smallTextSize"
+                     android:layout_weight=".5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="EmpID"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:textSize="@dimen/smallTextSize"
+                    android:layout_weight=".7"
+                    android:id="@+id/tv_opentry_empid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_border"
+                    android:padding="5dp" />
+
+
+                <TextView
+                    android:textSize="@dimen/smallTextSize"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="EmpName"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:textSize="@dimen/smallTextSize"
+                    android:visibility="gone"
+                   android:layout_weight="1"
+                    android:id="@+id/tv_opentry_empname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_border"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="@dimen/smallTextSize"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:textSize="@dimen/smallTextSize"
+                 android:id="@+id/edt_cust_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+
+            <TextView
+                android:textSize="@dimen/smallTextSize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="OP Type"
+                android:textColor="@color/black" />
+
+            <Spinner
+
+                android:id="@+id/spi_opentry_optype"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/spinner_bg" />
+
+            <TextView
+                android:textSize="@dimen/smallTextSize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Reason For OP"
+                android:textColor="@color/black" />
+
+            <Spinner
+
+                android:id="@+id/spi_reasonop"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/spinner_bg" />
+
+            <TextView
+                android:textSize="@dimen/smallTextSize"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:textSize="@dimen/smallTextSize"
+                android:id="@+id/edt_mlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="@dimen/smallTextSize"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="@dimen/smallTextSize"
+                android:id="@+id/tv_opentry_currlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+
+
+            <TextView
+                android:textSize="@dimen/smallTextSize"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Remark"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:textSize="@dimen/smallTextSize"
+                android:id="@+id/edt_opentry_remark"
+                android:lines="5"
+                android:maxLines="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:textSize="@dimen/smallTextSize"
+                android:background="@drawable/btn"
+                android:text="Save"
+                android:layout_margin="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+        </ScrollView>
+
+

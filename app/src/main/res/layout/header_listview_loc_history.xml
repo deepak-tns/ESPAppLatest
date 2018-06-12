@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@color/lightgreen"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:textSize="@dimen/smallTextSize"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/smallTextSize"
+            android:gravity="center"
+            android:text="Route No"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/smallTextSize"
+            android:gravity="center"
+            android:text="Lat"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/smallTextSize"
+            android:gravity="center"
+            android:text="Long"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="@dimen/smallTextSize"
+            android:text="Speed"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight=".7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:textSize="@dimen/smallTextSize"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

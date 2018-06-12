@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tns.espapp.activity.DesignFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewEsp"
+        android:layout_width="wrap_content"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="2dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        android:background="@drawable/bg_round"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/btnBackground"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/esp"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewVehicleTraker"
+        android:layout_width="wrap_content"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/cardViewEsp"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@drawable/bg_round"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/btnBackground"
+            android:layout_gravity="center"
+            android:text="@string/vehichletraker"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewLocation"
+        android:layout_width="wrap_content"
+        android:elevation="2dp"
+        android:layout_weight="1"
+        app:cardElevation="2dp"
+        android:textColor="@color/btnBackground"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/cardViewVehicleTraker"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@drawable/bg_round"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Location"
+            android:textColor="@color/btnBackground"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewOP"
+        android:layout_width="wrap_content"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/cardViewLocation"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@drawable/bg_round"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="OP"
+            android:textColor="@color/btnBackground"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

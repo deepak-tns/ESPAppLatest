@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tns.espapp">
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".activity.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/tns"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <service
+            android:name=".service.GPSTracker"
+            android:enabled="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:stopWithTask="false"></service>
+
+        <activity
+            android:name=".activity.CalenderEvent"
+            android:label="@string/title_activity_calender_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".NetworkStateReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.SendLatiLongiServerIntentService"
+            android:exported="false" />
+        <service
+            android:name=".service.SendOPEntryLatiLongiServerIntentService"
+            android:exported="false" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.CurrentLocationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_route_maps"
+            android:theme="@style/DrawerTheme" />
+        <activity
+            android:name=".activity.MapWebViewActivity"
+            android:label="MapView"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".push_notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".push_notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.ReadNotificationActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+
+        <receiver android:name=".SmsListener">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.LockScreenActivity"
+            android:label="@string/title_activity_lock_screen"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".activity.VehicleTrakerHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerTheme" />
+        <activity
+            android:name=".activity.OPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.DesignActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.PersonalInfoActivity" />
+        <activity android:name=".activity.InfoBullteinActivity" />
+        <activity android:name=".activity.LeaveApplyActivity" />
+        <activity android:name=".activity.LeaveSummaryActivity" />
+        <activity android:name=".activity.LeaveTransactionActivity" />
+        <activity android:name=".activity.LeaveLedgerActivity" />
+        <activity android:name=".activity.StoreInfoActivity" />
+        <activity android:name=".activity.AccountStatementsActivity" />
+        <activity android:name=".activity.BillInfoActivity" />
+        <activity android:name=".activity.EntitlementActivity" />
+        <activity android:name=".activity.AttendanceActivity" />
+        <activity
+            android:name=".activity.OPEntryActivity"
+            android:theme="@style/DrawerTheme">
+
+            <!--
+                   <intent-filter>
+                       <action android:name="android.intent.action.MAIN" />
+                       <category android:name="android.intent.category.LAUNCHER" />
+                   </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".activity.SalaryActivity" />
+        <activity android:name=".activity.TDSActivity" />
+        <activity
+            android:name=".activity.TaxiFormActivity"
+            android:theme="@style/DrawerTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TaxiHistoryActivity"
+            android:theme="@style/DrawerTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LocationHistoryActivity"
+            android:theme="@style/DrawerTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity
+            android:name=".activity.FeedbackHistoryActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.NewHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activity.DynamicFromActivity" />
+        <activity android:name=".activity.CreateTemplateActivity" />
+        <activity
+            android:name=".activity.RouteMapActivity"
+            android:theme="@style/DrawerTheme" />
+        <activity android:name=".fragment.ShowDataActivity" />
+        <activity
+            android:name=".TaxiTest"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerTheme" />
+        <activity
+            android:name=".fragment_new.AttendanceFixActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".fragment_new.AttendanceRemoteActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <service
+            android:name=".service.OPEntryGPSTracker"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.OPHistoryActivity"
+            android:label="@string/title_activity_ophistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OPEntryLocationHistoryActivity"
+            android:label="@string/title_activity_opentry_location_history"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment_new.SurveryFormDynamicRowActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+
+            <!--
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".fragment_new.SurveyFormFixRowActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".fragment_new.CheckListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.CameraSurfaceViewActivity" />
+        <activity
+            android:name=".fragment_new.CustomGalleryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment_new.AttendanceRemoteFixHistoryActivity"
+            android:theme="@style/DrawerTheme" />
+        <activity
+            android:name=".BusinessIntelligence.AttendanceReportActivity"
+            android:theme="@style/DrawerTheme" />
+        <activity
+            android:name=".fragment_new.SurveyFormFixRowHistoryActivity"
+            android:theme="@style/DrawerTheme">
+
+            <!--
+     <intent-filter>
+         <action android:name="android.intent.action.MAIN" />
+         <category android:name="android.intent.category.LAUNCHER" />
+     </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".fragment_new.SurveyFormDynamicRowHistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver
+            android:name=".RestartGPSServiceReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.SendMailActivity"
+            android:theme="@style/DrawerTheme">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">ESP</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_view__search__record">View_Search_Record</string>
+    <string name="title_activity_calender_event">CalenderEvent</string>
+    <string name="location_history"><u>Location History</u></string>
+
+
+    <string name="add_event">ADD CALENDAR EVENT</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="last_date">30</string>
+    <string name="title_activity_route_maps">Map</string>
+
+    - <!-- Registration String
+  -->
+    <string name="sign_up">Sign Up</string>
+    <string name="employeeName">Employee Name</string>
+    <string name="employeeId">Employee ID</string>
+    <string name="email_address">Email Address</string>
+    <string name="sign_in_with_facebook">Sign in with facebook</string>
+    <string name="password">Password</string>
+    <string name="verify">Login</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="or">OR</string>
+    - <!-- Error of Registration Page
+  -->
+    <string name="employeeIdError">Fill Employee Id</string>
+    <string name="employeePasswordError">Fill Employee Password</string>
+    <string name="check_employeePasswordError">Enter Valid Password</string>
+    <string name="title_activity_lock_screen">LockScreenActivity</string>
+    <string name="tns_mpin">Tns MPIN</string>
+    <string name="register">Register</string>
+
+    <!-- HomeActivity Strings
+ -->
+    <string name="personal">Personal</string>
+    <string name="personal_docs">Personal Docs</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="welcome_new_joinee">Welcome New Joinee</string>
+    <string name="leave_apply">Leave Apply</string>
+    <string name="leave_transaction">Leave Transaction</string>
+    <string name="leave_summary">Leave Summary</string>
+    <string name="leave_ledger">Leave Ledger</string>
+    <string name="leave">Leave</string>
+    <string name="leave_approval">Leave Approval</string>
+    <string name="op_approval">OP Approval</string>
+    <string name="approval">Approval</string>
+    <string name="navigation">Navigation</string>
+    <string name="store_Info">Store Info</string>
+    <string name="account_statements">Account Statements</string>
+    <string name="bills_Info">Bills Info</string>
+    <string name="entitlement_Info">Entitlement Info</string>
+    <string name="store_account">Store &amp; A/C</string>
+    <string name="attendance">Attendance</string>
+    <string name="op">OP</string>
+    <string name="opEntry">OP Entry</string>
+    <string name="opHistory">OP History</string>
+    <string name="salary_info">Salary Info</string>
+    <string name="taxi_info">Vehicle</string>
+    <string name="salary">Salary</string>
+    <string name="feedback">FeedBack</string>
+    <string name="location">Location</string>
+    <string name="locationHistory">Location History</string>
+    <string name="taxiHistory">Taxi History</string>
+    <string name="currentlocation">Current Location</string>
+    <string name="tds_declaration">TDS Declaration</string>
+    <string name="wait_for_approval">You are Registered Successfully Please Wait for Approval</string>
+    <string name="esp">ESP</string>
+    <string name="vehichletraker">Vehicle Traker</string>
+
+    <string name="reason_for_leave">Reason for leave</string>
+    <string name="title_activity_ophistory">OPHistoryActivity</string>
+    <string name="title_activity_opentry_location_history">OPEntryLocationHistoryActivity</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

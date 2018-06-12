@@ -1,0 +1,247 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tns.espapp.fragment_new.AttendanceRemoteFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@color/lightgray"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="Attendance Remote"
+        android:textSize="@dimen/smallTextSize"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_attendance_remote_history"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            android:background="@color/lightgray"
+            android:textColor="@color/black"
+            android:text="Attendance History"
+            android:textSize="@dimen/smallTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgray"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"/>
+
+
+        <LinearLayout
+            android:background="@drawable/boder"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smallTextSize"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_currdate"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smallTextSize"
+                    android:text="Current Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/button_shadow_bg"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallTextSize"
+                android:text="InTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:layout_weight=".4"
+                android:id="@+id/edt_attandence_intime"
+                android:textSize="@dimen/smallTextSize"
+                android:background="@drawable/edt_border"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_shadow_bg"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallTextSize"
+                android:text="OutTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                 android:visibility="invisible"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:layout_weight=".4"
+                android:id="@+id/edt_attandence_outtime"
+                android:textSize="@dimen/smallTextSize"
+                android:background="@drawable/edt_border"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgray"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_intime_get"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Intime"
+            android:textSize="@dimen/smallTextSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_outtime_get"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Outtime"
+            android:textSize="@dimen/smallTextSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:text="InTimeImg Preview"
+                android:id="@+id/btn_in_preview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:text="OutTimeImg Preview"
+                android:id="@+id/btn_out_preview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:text="Remark:      "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="12dp"
+                android:id="@+id/edt_remote_intimeremark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:text="outTime Remark:   "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="12dp"
+                android:id="@+id/edt_remote_outtimeremark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:background="@drawable/button_shadow_bg"
+            android:textSize="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Save"
+            android:id="@+id/btn_save"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+</FrameLayout>

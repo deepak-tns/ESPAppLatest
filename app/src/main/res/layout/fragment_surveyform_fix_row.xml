@@ -1,0 +1,197 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tns.espapp.fragment.SurveyFormFixRowFragment">
+
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/taxifragmentss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/btnBackground"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_personal_ind_white_24dp" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Survey Form"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@android:drawable/gallery_thumb"
+               android:id="@+id/cus_gallery"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/tv_surveyform_Fix_history"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:background="@color/lightgray"
+                android:textColor="@color/black"
+                android:text="SurveyForm History"
+                android:textSize="@dimen/smallTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/set_formane"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="12dp" />
+                <Spinner
+                    android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/finalfeedback_spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_bg"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/table_main2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                </LinearLayout>
+
+                    <include
+                        android:visibility="gone"
+                        android:id="@+id/lay_header"
+                        layout="@layout/checklistsavefragment_listview_header"/>
+
+                    <ListView
+                        android:layout_marginBottom="20dp"
+                        android:dividerHeight="1dp"
+                        android:divider="@color/gray"
+                        android:id="@+id/final_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                    </ListView>
+
+                    <Button
+
+                        android:id="@+id/btn_send"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginRight="22dp"
+                        android:background="@drawable/button_bg"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+        <!--        <RelativeLayout
+
+                    android:id="@+id/relative_attachment_save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/attachmentTextView"
+                        android:layout_width="fill_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Attachment"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+
+                        android:id="@+id/iv_add_attachment"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@android:drawable/ic_input_add" />
+
+                </RelativeLayout>
+
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:id="@+id/main_table_tb"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                        </TableLayout>
+                        <Button
+                            android:layout_below="@+id/final_listview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="22dp"
+                            android:background="@drawable/button_bg"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</ScrollView>

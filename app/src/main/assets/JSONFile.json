@@ -1,0 +1,85 @@
+{
+  "sitedata": [
+    {
+      "formno" : "1",
+      "siteid": "Linear Motion",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+
+    },
+    {
+      "formno" : "2",
+      "siteid": "Constant Acceleration Motion",
+      "sitetype": {
+        "value" :"status",
+        "type":"boolean"
+      }
+    },
+    {
+      "formno" : "3",
+      "siteid": "Projectile Motion",
+      "sitetype": {
+        "value" :"mobile",
+        "type":"number"
+      }
+    },
+    {
+      "formno" : "4",
+      "siteid": "Force",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+    },
+    {
+      "formno" : "5",
+      "siteid": "Work, Power, Energy",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+    },
+    {
+      "formno" : "6",
+      "siteid": "Rotary Motion",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+    },
+    {
+      "formno" : "7",
+      "siteid": "Harmonic Motion",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+    },
+    {
+      "formno" : "8",
+      "siteid": "Gravity",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+    },
+    {
+      "formno" : "9",
+      "siteid": "Lateral and Longitudinal Waves",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+    },
+    {
+      "formno" : "10",
+      "siteid": "Sound Waves",
+      "sitetype": {
+        "value" :"age",
+        "type":"date"
+      }
+    }
+  ]
+}

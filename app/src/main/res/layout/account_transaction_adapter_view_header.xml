@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:padding="5dp"
+            android:text="Date"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:padding="5dp"
+            android:text="Details"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:padding="5dp"
+            android:text="Debit"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:padding="5dp"
+            android:text="Credit"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:padding="5dp"
+            android:text="Balance"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

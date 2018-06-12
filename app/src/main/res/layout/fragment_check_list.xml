@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/last"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context="com.tns.espapp.fragment.CheckListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
+        android:id="@+id/taxifragment"
+        android:background="@color/btnBackground"
+        android:layout_height="match_parent">
+
+   <!--     <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:tint="@color/blue"
+                android:id="@+id/counterBackground"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@android:drawable/star_on" />
+
+            <TextView
+                android:background="@drawable/rounded_corner1"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textColor="#00d"
+                android:textSize="8sp" />
+        </RelativeLayout>-->
+
+
+            <RelativeLayout
+              android:background="@color/white"
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <!--  <TextView
+
+                android:id="@+id/frg_from"
+                android:textSize="24dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+
+                <LinearLayout
+                    android:id="@+id/li_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/frg_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="CheckList Form"
+                        android:textSize="20dp" />
+
+                    <Spinner
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:layout_margin="10dp"
+                        android:id="@+id/spinner1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_bg"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_crete_form"
+                        android:layout_weight="1"
+                        android:text="Create Templete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <!--    <TableLayout
+                    android:background="@drawable/doubleline_border"
+                    android:layout_below="@+id/li_1"
+                    android:id="@+id/table_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+                </TableLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/table_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/li_1"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                </LinearLayout>
+
+
+            <!--    <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/li_1"
+                    android:layout_marginTop="20dp"
+                    android:scrollbars="vertical"
+                    android:visibility="gone" />-->
+<ScrollView
+    android:layout_below="@+id/li_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+                        <ListView
+                            android:layout_below="@+id/li_1"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            android:id="@+id/listview_chk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:visibility="visible" />
+
+                      <RelativeLayout
+                            android:layout_below="@+id/listview_chk"
+                            android:id="@+id/relative_attachment"
+                            android:visibility="gone"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+
+                                android:textColor="@color/black"
+                                android:text="Attachment"
+                                android:id="@+id/attachmentTextView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+
+                                android:src="@android:drawable/ic_input_add"
+                                android:id="@+id/iv_add_attachment"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp" />
+
+                        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

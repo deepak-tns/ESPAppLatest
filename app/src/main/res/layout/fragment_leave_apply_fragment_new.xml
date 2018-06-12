@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0E6F1"
+    android:orientation="vertical">
+
+    <!--  header.......................-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_personal_ind_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Leave Form"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--   end header-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Total Availed :"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tv_leave_apply_totalavai"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Leave For"
+                android:textColor="@color/black" />
+
+            <Spinner
+
+                android:id="@+id/spi_leaveapply_leavefor"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/spinner_bg" />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Form Date"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/tv_leaveaply_formto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edt_border"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:focusable="false"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="To Date"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/tv_leaveaply_todate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edt_border"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:focusable="false"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Total Days"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_total_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/reason_for_leave"
+                    android:textColor="@color/black" />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/reason_leave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Email"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_leave_apply_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:text="Contact no"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_leave_apply_contactno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Leave Type"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_leave_type"
+                android:enabled="false"
+                android:text="Casual Leave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_border"
+                android:padding="5dp" />
+
+
+            <Button
+                android:id="@+id/btn_leave_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="@drawable/btn"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

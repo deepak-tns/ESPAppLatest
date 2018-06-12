@@ -1,0 +1,92 @@
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tns.espCurrentLocationActivityvity" />-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.tns.espapp.activity.CurrentLocationActivity" >
+
+ <LinearLayout
+
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <include
+         android:id="@+id/toolbar"
+         layout="@layout/toolbar" />
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <EditText
+             android:layout_margin="2dp"
+             android:background="@drawable/edittextborder"
+             android:id="@+id/edt_search_loc"
+             android:layout_weight="9"
+             android:padding="@dimen/activity_horizontal_margin"
+             android:layout_width="0dp"
+             android:layout_height="40dp" />
+
+         <Button
+             android:id="@+id/btn_find"
+             android:layout_weight="2"
+             android:text="Find"
+             android:layout_width="0dp"
+             android:layout_height="40dp" />
+         <Button
+             android:layout_marginRight="5dp"
+             android:background="@android:drawable/ic_menu_share"
+             android:id="@+id/btn_share"
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="30dp" />
+
+
+     </LinearLayout>
+
+
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+     <fragment
+         android:id="@+id/map"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+         <LinearLayout
+
+
+             android:background="@drawable/bg_round"
+             android:layout_margin="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <TextView
+
+                 android:padding="5dp"
+                 android:id="@+id/tv_first"
+                 android:text="Current Location"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+         </LinearLayout>
+
+     </FrameLayout>
+ </LinearLayout>
+
+
+</RelativeLayout>

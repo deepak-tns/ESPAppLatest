@@ -1,0 +1,379 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tns.espapp.fragment_new.SiteInfoFragment">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/re_siteinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/imageView2" />
+
+                    <TextView
+
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Survey DynamicForm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_Active"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/re_checklist"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+
+                        android:textSize="10sp"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="CheckList"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--  business loginb   ............................................................................
+               -->
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+
+                    android:id="@+id/re_siteinfo_history"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                      android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="SiteInfo  History"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+
+                    android:id="@+id/re_checklisthistory"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:padding="5dp"
+                        android:text="Checklist History"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--  about us ............................................................................
+       -->
+
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_weight=".5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+
+                    android:id="@+id/re_siteinfo_fixform"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="SiteInfo FixForm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:background="#045377"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+
+                    android:id="@+id/business_login"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                    <ImageView
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:text="Business Login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_weight=".5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Current Location"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+            <!--   <LinearLayout
+                   android:background="#045377"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="fill_parent">
+                   <RelativeLayout
+                       android:background="@drawable/highlight_item"
+                       android:id="@+id/business_login"
+                       android:orientation="vertical"
+                       android:layout_weight="1"
+                       android:layout_width="0dp"
+                       android:layout_height="fill_parent">
+                       <ImageView
+                           android:src="@mipmap/carweight"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentStart="true" />
+                       <TextView
+                           android:gravity="center"
+                           android:singleLine="true"
+                           android:layout_alignParentBottom="true"
+                           android:textStyle="bold"
+                           android:typeface="monospace"
+                           android:textColor="#fff"
+                           android:textSize="16sp"
+                           android:padding="5dp"
+                           android:text="Business Login"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content" />
+                   </RelativeLayout>
+               </LinearLayout>-->
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tns.espapp.fragment_new.OPEntryHistoryFragment_new">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--
+            <TextView
+                android:textColor="#33b5e5"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_history" />
+        -->
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/edittextborder"
+        android:hint="Search By  Date"
+        android:id="@+id/search_ophristoryrecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    </EditText >
+
+    <ListView
+
+        android:id="@+id/listview_op_history"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+    </ListView>
+
+
+
+    <LinearLayout
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--  header.......................-->
+    <LinearLayout
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_personal_ind_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="OP History"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--   end header-->
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Select Year">
+
+        </TextView>
+
+        <Spinner
+            android:padding="5dp"
+            android:id="@+id/spi_ophistory_year"
+            android:background="@drawable/spinner_bg"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Employee">
+
+        </TextView>
+
+        <TextView
+            android:background="@drawable/edit_text_design"
+            android:id="@+id/tv_empid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="5dp"
+            android:text="">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

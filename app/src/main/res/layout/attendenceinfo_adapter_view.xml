@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:id="@+id/tv_atten_date"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="Date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_atten_status"
+            android:padding="5dp"
+            android:text="Status"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:id="@+id/tv_atten_intime"
+            android:padding="5dp"
+            android:text="InTime"
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:id="@+id/tv_atten_outtime"
+            android:padding="5dp"
+            android:text="OutTime"
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:id="@+id/tv_atten_takenmin"
+            android:padding="5dp"
+            android:text="Taken Min"
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

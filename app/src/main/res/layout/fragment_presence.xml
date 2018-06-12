@@ -1,0 +1,429 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tns.espapp.fragment_new.PresenceFragment">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/presence_opentry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/imageView2" />
+
+                    <TextView
+
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="OP Entry"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_presence_attendancefix_Active"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/presence_attendancefix"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+
+                        android:textSize="10sp"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Attendance \n FixLocation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/linear_presence_attendancefix_NotActive"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+
+                    android:id="@+id/presence_attendancefix_NotActive"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:textSize="24dp"
+                        android:text="Inactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textSize="10sp"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/gray"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Attendance \n FixLocation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--  business loginb   ............................................................................
+               -->
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/presence_attendance_remote"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Attendance \n RemoteLocation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+
+                    android:id="@+id/presence_ophistory"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:padding="5dp"
+                        android:text="OP History"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--  about us ............................................................................
+       -->
+
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_weight=".5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+
+                    android:id="@+id/loctorfrag_opentrylocationhistory"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="OP Location History"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:background="#045377"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+
+                    android:id="@+id/business_login"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                    <ImageView
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:text="Business Login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_weight=".5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/house"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Current Location"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+            <!--   <LinearLayout
+                   android:background="#045377"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="fill_parent">
+                   <RelativeLayout
+                       android:background="@drawable/highlight_item"
+                       android:id="@+id/business_login"
+                       android:orientation="vertical"
+                       android:layout_weight="1"
+                       android:layout_width="0dp"
+                       android:layout_height="fill_parent">
+                       <ImageView
+                           android:src="@mipmap/carweight"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentStart="true" />
+                       <TextView
+                           android:gravity="center"
+                           android:singleLine="true"
+                           android:layout_alignParentBottom="true"
+                           android:textStyle="bold"
+                           android:typeface="monospace"
+                           android:textColor="#fff"
+                           android:textSize="16sp"
+                           android:padding="5dp"
+                           android:text="Business Login"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content" />
+                   </RelativeLayout>
+               </LinearLayout>-->
+
+
+            <!--          <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

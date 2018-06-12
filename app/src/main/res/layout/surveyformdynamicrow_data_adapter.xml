@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btn_add_row"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_bg"
+        android:text="Add Data"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColor="@color/black"
+            android:ems="12"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:background="@null"
+            android:textSize="12dp"
+            android:id="@+id/tv_sno"
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+           <View
+               android:background="@color/gray"
+               android:layout_width="1dp"
+               android:layout_height="match_parent">
+
+           </View>
+        <EditText
+            android:textColor="@color/black"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:background="@null"
+            android:textSize="12dp"
+
+            android:id="@+id/tv_description"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <EditText
+           android:focusableInTouchMode="true"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:padding="5dp"
+            android:background="@null"
+            android:textSize="12dp"
+            android:id="@+id/tv_status"
+            android:text=""
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+
+        </View>
+        <EditText
+
+            android:textColor="@color/black"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:padding="5dp"
+            android:background="@null"
+            android:textSize="12dp"
+            android:id="@+id/tv_remark"
+            android:text=""
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+
+        </View>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:src="@android:drawable/ic_input_add"
+                android:id="@+id/tv_photos_1"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:src="@android:drawable/ic_input_add"
+                android:id="@+id/tv_photos"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:src="@android:drawable/ic_input_add"
+                android:id="@+id/tv_photos_2"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:src="@android:drawable/ic_input_add"
+                android:id="@+id/tv_photos_3"
+                android:text="Photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:src="@android:drawable/ic_input_add"
+                android:id="@+id/tv_photos_4"
+                android:text="Photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:src="@android:drawable/ic_input_add"
+                android:id="@+id/tv_photos_5"
+                android:text="Photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

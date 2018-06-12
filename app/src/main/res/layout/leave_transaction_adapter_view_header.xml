@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="Emp Name/Id"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Dept"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Reporting Head"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Leave Form"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Leave To"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Apply Days"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Sec From"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Sec To"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Approved Days"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Approved"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="Action"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

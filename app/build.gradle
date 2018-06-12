@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.tns.espapp"
+        minSdkVersion 15
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven {
+        jcenter()
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/ftp4j-1.6.jar')
+
+    // retrofit, gson
+
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.android.support:appcompat-v7:26.0.2'
+    compile 'com.android.support:design:26.0.2'
+    compile 'com.android.support:recyclerview-v7:26.0.2'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.android.support:cardview-v7:26.0.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.squareup:otto:1.3.7'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.maps.android:android-maps-utils:0.3.+'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.android.support:support-v4:26.0.2'
+    compile 'com.itextpdf:itextpdf:5.5.11'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.android.gms:play-services:10.0.1'
+
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

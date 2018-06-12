@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/action_taxi"
+        android:icon="@drawable/ic_local_taxi_black_48dp"
+        android:title="Taxi"/>
+    </group>
+
+    <group android:id="@+id/group3"
+        android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/action_currentlocation"
+        android:icon="@drawable/ic_location_on_black_48dp"
+        android:title="Location"/>
+    </group>
+    <item
+        android:id="@+id/action_servey"
+        android:icon="@drawable/ic_insert_photo_black_48dp"
+        android:title="Feedback"/>
+
+</menu>

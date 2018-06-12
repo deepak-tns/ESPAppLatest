@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:text="Month"
+        android:id="@+id/tv_leaveladger_month"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Opening EL"
+        android:id="@+id/tv_leaveladger_op_el"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Opening CL"
+        android:id="@+id/tv_leaveladger_op_cl"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Credit EL"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_cre_el"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Credit CL"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_cre_cl"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Taken EL"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_taken_el"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Taken CL"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_taken_cl"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Balance EL"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_balance_el"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Balance CL"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_balance_cl"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Permited By HR"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_per_by_hr"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Total Credit"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_total_cre"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Total Taken"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_total_taken"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Deducted By HR"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_ded_by_hr"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/white"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Total Balance"
+        android:layout_weight="1"
+        android:id="@+id/tv_leaveladger_total_balance"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

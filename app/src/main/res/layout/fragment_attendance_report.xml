@@ -1,0 +1,292 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tns.espapp.BusinessIntelligence.AttendanceReportFragment">
+
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight=".9"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Year">
+
+                </TextView>
+
+                <Spinner
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/spi_year"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Month">
+
+                </TextView>
+
+                <Spinner
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/spi_month"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="1.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".8"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Days">
+
+                </TextView>
+
+                <Spinner
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/spi_days"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:padding="20dp"
+            android:layout_weight="3"
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/li_custom_legend1"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/green"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="9dp"
+                android:padding="3dp"
+                android:text="Absent(A)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/red"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+
+                android:textColor="@color/black"
+                android:textSize="9dp"
+                android:padding="3dp"
+                android:text="Absent(AB)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/lite_orange"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="9dp"
+                android:padding="3dp"
+                android:text="LWP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorFAB2"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="9dp"
+                android:padding="3dp"
+                android:text="Loaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/sky"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="9dp"
+                android:padding="3dp"
+                android:text="Idle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/li_custom_legend2"
+        android:layout_marginLeft="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@color/orange"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:padding="3dp"
+            android:text="UnLoaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:visibility="gone"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="10dp"/>
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@color/limegreen"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:padding="3dp"
+            android:text="Transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:visibility="gone"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="10dp"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:id="@+id/btn_search"
+
+        android:textSize="12dp"
+        android:background="@color/colorPrimary"
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+
+</LinearLayout>

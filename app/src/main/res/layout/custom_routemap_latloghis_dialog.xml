@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:layout_above="@+id/ccc"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:id="@+id/routemap"
+            android:text="Route Map"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/ccc"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:text="Route Map"
+        android:textSize="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/ccc"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:id="@+id/routehistory"
+        android:text="Route History"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tns.espapp.activity.RouteMapActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <FrameLayout
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/iv_speed_show"
+                android:layout_gravity="center"
+                android:rotation="90"
+                android:src="@drawable/leftarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/iv_speed_hide"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:rotation="180"
+                android:src="@drawable/leftarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/show_linear_speed"
+            android:background="@drawable/doubleline_border"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/blue"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:textSize="@dimen/smallTextSize"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue"
+                    android:text="Speed 0 to 5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:background="@color/green"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+    <TextView
+        android:textSize="@dimen/smallTextSize"
+        android:layout_gravity="center"
+        android:textColor="@color/green"
+        android:text="Speed 5 to 20"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/orange"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:textSize="@dimen/smallTextSize"
+                    android:layout_gravity="center"
+                    android:textColor="@color/orange"
+                    android:text="Speed 20 to 40"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/red"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:textSize="@dimen/smallTextSize"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red"
+                    android:text="Speed 40 to 60"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+    </LinearLayout>
+
+</RelativeLayout>
